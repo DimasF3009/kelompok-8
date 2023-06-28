@@ -121,33 +121,65 @@ C.ADD FOREIGN KEY (id_ruang) REFERENCES tabel ruang (id_ruang)
 
 **1. Tabel Instansi**
 
+```
+SELECT * FROM instansi
+```
+
 <img width="270" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/036b4027-8489-437b-96c6-6a44f2523008">
 
 **2. Tabel Gedung**
+
+```
+SELECT * FROM gedung;
+```
 
 <img width="248" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/941bc394-3086-4003-9a4e-bb47df42b109">
 
 **3. Tabel Ruang**
 
+```
+SELECT * FROM ruang;
+```
+
 <img width="394" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/5757849e-055f-4481-bf93-3b8a9ac0ac55">
 
 **4. Tabel Petugas**
+
+```
+SELECT * FROM petugas
+```
 
 <img width="372" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/32b6cdb3-9d28-4f0d-9619-d8c57a576fdd">
 
 **5. Tabel Jenis_Kegiatan**
 
+```
+SELECT * FROM jenis_kegiatan;
+```
+
 <img width="295" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/4174792f-33c4-453f-9053-0c7e0ddfb682">
 
 **6. Tabel Peminjam**
+
+```
+SELECT * FROM peminjan;
+```
 
 <img width="845" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/232ae839-e88e-41e3-93d3-20e001e059d8">
 
 **7. Tabel pinjaman**
 
+```
+SELECT * FROM pinjaman;
+```
+
 <img width="797" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/476020fa-f3a5-47ef-9bc5-3ca30a3dd0c4">
 
 **8. Tabel Detail_pinjaman_ruang**
+
+```
+SELECT * FROM Detail_pinjaman_ruang;
+```
 
 <img width="392" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/1ecec78a-e29e-4b73-93e2-ec342cf895bc">
 
@@ -171,3 +203,21 @@ C.ADD FOREIGN KEY (id_ruang) REFERENCES tabel ruang (id_ruang)
 ### 3. Menghapus tabel 
 
 ![WhatsApp Image 2023-06-28 at 14 13 22](https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/175de1a4-ac5a-4c31-b491-537d6bf9b758)
+
+#### • SQL JOIN = (ADA)
+
+### 1. JOIN antara tabel peminjam dan instansi:
+
+<img width="681" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/1ddf0208-5eff-4633-8d5e-e3db6b18514e">
+
+### 2.JOIN antara tabel pinjaman, peminjam, dan jenis_kegiatan, detail_pinjaman_ruang
+
+<img width="883" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/432de9ec-4e78-4a7e-8063-540fd0146656">
+
+### 3. JOIN antara tabel detail_pinjaman_ruang, pinjaman, petugas, dan ruang:
+
+<img width="522" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/2a7c9048-149e-4188-8d4f-2ec60f72315b">
+
+### 4. JOIN antara tabel ruang, gedung dan detail_pinjaman_ruang :
+
+<img width="483" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/d67fbc07-d258-4efa-9062-798195234611">
