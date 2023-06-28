@@ -150,6 +150,7 @@ C.ADD FOREIGN KEY (id_ruang) REFERENCES tabel ruang (id_ruang)
 **8. Tabel Detail_pinjaman_ruang**
 
 <img width="392" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/1ecec78a-e29e-4b73-93e2-ec342cf895bc">
+
 ### (U) UPDATE (Mengubah data yang sudah ada)
 
 **Mengubah data pada tabel**
