@@ -150,3 +150,23 @@ C.ADD FOREIGN KEY (id_ruang) REFERENCES tabel ruang (id_ruang)
 **8. Tabel Detail_pinjaman_ruang**
 
 <img width="392" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/1ecec78a-e29e-4b73-93e2-ec342cf895bc">
+### (U) UPDATE (Mengubah data yang sudah ada)
+
+**Mengubah data pada tabel**
+
+![WhatsApp Image 2023-06-25 at 20 54 19](https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/5bcb561d-c1db-4b9b-ac65-6baeadef3844)
+
+
+### (D) DELETE (Menghapus data/kolom pada database)
+
+### 1. Menghapus kolom pada tabel
+
+<img width="640" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/1602c758-5910-48b4-bffd-c789f4e1def7">
+
+### 2. Sebelum menghapus tabel hapus constraint terlebih dahulu
+
+![WhatsApp Image 2023-06-28 at 14 12 48](https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/0b1b03bd-ab3f-4607-bf23-e5ad42dcb559)
+
+### 3. Menghapus tabel 
+
+![WhatsApp Image 2023-06-28 at 14 13 22](https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/175de1a4-ac5a-4c31-b491-537d6bf9b758)
