@@ -11,12 +11,11 @@
 
 <img width="402" alt="Screenshot 2023-06-23 081607" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115356128/a377dd2f-7bf6-42b3-99a1-b1b594797226">
 
-• DDL (Data Definition Language), digunakan untuk mendefinisikan struktur
-tabel data.
+**DDL** (Data Definition Language), digunakan untuk mendefinisikan struktur tabel data.
 
 ![Kelompok 8](https://github.com/DimasF3009/kelompok-8/assets/115356128/e5252efc-03fa-4000-96c7-061bd641e391)
 
-• SQL CRUD 
+# SQL CRUD 
 
 ### (C) CREATE (Membuat database, membuat tabel, dan membuat data)
 ### 1. Membuat database
@@ -117,7 +116,7 @@ ADD FOREIGN KEY (id_ruang) REFERENCES tabel ruang (id_ruang)
 <img width="908" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/a3089ae1-5eef-4ca5-9025-13c3c8079f01">ㅤㅤㅤ
 
 
-### (R) READ (Membaca atau melihat data dari database)
+### (R) READ (Membaca, melihat atau Menampilkan data dari database)
 
 **1. Tabel Instansi**
 
@@ -204,7 +203,7 @@ SELECT * FROM Detail_pinjaman_ruang;
 
 ![WhatsApp Image 2023-06-28 at 14 13 22](https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/175de1a4-ac5a-4c31-b491-537d6bf9b758)
 
-#### • SQL JOIN = (ADA)
+## • SQL JOIN 
 
 ### 1. JOIN antara tabel peminjam dan instansi:
 
