@@ -53,3 +53,43 @@
 **8. Table ruang**
 
 <img width="395" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/2a0af80f-fba2-46c4-a32b-310c1b5063f5">
+
+### 3. Memasukan data pada tabel
+
+**1. Tabel Instansi**
+
+<img width="443" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/bf241035-4693-463e-8ea7-7f3d09d17697">ㅤㅤ ㅤㅤㅤ
+
+**2. Tabel Gedung**
+
+<img width="415" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/b2fd96e2-7b8b-4b19-b191-745532402fc2">ㅤ ㅤㅤㅤ
+
+**3. Tabel Ruang**
+
+<img width="588" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/d31727ee-0680-451c-abf8-df331e434bdf">ㅤ ㅤ ㅤㅤ ㅤㅤㅤ
+
+**Menambahkan constraint dari tabel ruang (id_gedung) referensi tabel gedung (id_gedung)**
+
+<img width="546" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/7f9c17fd-c8ff-48f8-a784-075e0a0e4838">
+
+**4. Tabel Petugas**
+
+<img width="538" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/2622d0b3-d233-4a7f-a950-89bdb9ae9e6c">ㅤ ㅤㅤ ㅤㅤㅤ
+
+
+**5. Tabel Jenis_Kegiatan**
+
+<img width="500" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/7a3bcc95-7012-4aee-b7d7-301253406d4b">ㅤ ㅤㅤ
+
+**6. Tabel Peminjam**
+
+<img width="784" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/552a8440-1e3e-443f-b500-206f2169bffd">ㅤㅤㅤ
+
+**Menambahkan constraint dari tabel peminjam (id_instansi) referensi tabel instansi (id_instansi)**
+
+<img width="591" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/1d94fc4f-bfc2-4921-8f3c-36c169502e1d">
+
+**7. Tabel pinjaman**
+
+<img width="908" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/a3089ae1-5eef-4ca5-9025-13c3c8079f01">ㅤㅤㅤ
+```
