@@ -162,7 +162,7 @@ SELECT * FROM jenis_kegiatan;
 **6. Tabel Peminjam**
 
 ```
-SELECT * FROM peminjan;
+SELECT * FROM peminjam;
 ```
 
 <img width="845" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/232ae839-e88e-41e3-93d3-20e001e059d8">
