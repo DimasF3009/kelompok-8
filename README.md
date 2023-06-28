@@ -116,3 +116,37 @@ C.ADD FOREIGN KEY (id_ruang) REFERENCES tabel ruang (id_ruang)
 
 <img width="908" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/a3089ae1-5eef-4ca5-9025-13c3c8079f01">ㅤㅤㅤ
 
+
+### (R) READ (Membaca atau melihat data dari database)
+
+**1. Tabel Instansi**
+
+<img width="270" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/036b4027-8489-437b-96c6-6a44f2523008">
+
+**2. Tabel Gedung**
+
+<img width="248" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/941bc394-3086-4003-9a4e-bb47df42b109">
+
+**3. Tabel Ruang**
+
+<img width="394" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/5757849e-055f-4481-bf93-3b8a9ac0ac55">
+
+**4. Tabel Petugas**
+
+<img width="372" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/32b6cdb3-9d28-4f0d-9619-d8c57a576fdd">
+
+**5. Tabel Jenis_Kegiatan**
+
+<img width="295" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/4174792f-33c4-453f-9053-0c7e0ddfb682">
+
+**6. Tabel Peminjam**
+
+<img width="845" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/232ae839-e88e-41e3-93d3-20e001e059d8">
+
+**7. Tabel pinjaman**
+
+<img width="797" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/476020fa-f3a5-47ef-9bc5-3ca30a3dd0c4">
+
+**8. Tabel Detail_pinjaman_ruang**
+
+<img width="392" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/1ecec78a-e29e-4b73-93e2-ec342cf895bc">
