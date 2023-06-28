@@ -90,6 +90,26 @@
 <img width="591" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/1d94fc4f-bfc2-4921-8f3c-36c169502e1d">
 
 **7. Tabel pinjaman**
+A.Menambahkan constraint dari tabel pinjaman ADD FOREIGN KEY (id_peminjam) referensi tabel peminjam (id_peminjam )
+
+B.ADD FOREIGN KEY (id_jenis_kegiatan) referensi tabel id_jenis_kegiatan (id_jenis_kegiatan)**
+```
+
+<img width="647" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/4df4b091-9b4e-40ca-a6b4-61f61be708e1">
+
+**8. Tabel Detail_pinjaman_ruang**
+
+<img width="685" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/105b1a37-686b-4a8b-93f9-06f07d50a0db">ㅤㅤㅤ
+```
+A.Menambahkan constraint dari tabel detail_pinjaman_ruang ADD FOREIGN KEY (id_pinjaman) REFERENCES tabel pinjaman (id_pinjaman),
+
+B.ADD FOREIGN KEY (id_petugas) REFERENCES tabel petugas (id_petugas),
+
+C.ADD FOREIGN KEY (id_ruang) REFERENCES tabel ruang (id_ruang)
+```
+
+<img width="655" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/68b619fc-b366-40b0-9f56-d4925f5aef37">
+
 
 <img width="908" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/a3089ae1-5eef-4ca5-9025-13c3c8079f01">ㅤㅤㅤ
 ```
