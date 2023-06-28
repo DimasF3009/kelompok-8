@@ -105,10 +105,10 @@ A.Menambahkan constraint dari tabel detail_pinjaman_ruang ADD FOREIGN KEY (id_pi
 B.ADD FOREIGN KEY (id_petugas) REFERENCES tabel petugas (id_petugas),
 
 C.ADD FOREIGN KEY (id_ruang) REFERENCES tabel ruang (id_ruang)
-```
+
 
 <img width="655" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/68b619fc-b366-40b0-9f56-d4925f5aef37">
 
 
 <img width="908" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/a3089ae1-5eef-4ca5-9025-13c3c8079f01">ㅤㅤㅤ
-```
+
