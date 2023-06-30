@@ -210,22 +210,24 @@ SELECT * FROM Detail_pinjaman_ruang;
 ```
 SELECT peminjam.*, instansi.nama_instansi 
 FROM peminjam 
-INNER JOIN instansi ON peminjam.id_instansi = instansi.id_instansi;
+JOIN instansi ON peminjam.id_instansi = instansi.id_instansi;
 ```
 
-<img width="681" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/1ddf0208-5eff-4633-8d5e-e3db6b18514e">
+<img width="847" alt="image" src="https://github.com/DimasF3009/kelompok-8/assets/115542822/e14f4588-3dbc-490f-aa34-61c9631b0d9b">
+
 
 ### 2.JOIN antara tabel pinjaman, peminjam, dan jenis_kegiatan, detail_pinjaman_ruang :
 
 ```
 SELECT pinjaman.tgl_pinjam, pinjaman.jam_awal, pinjaman.jam_akhir, peminjam.nama_lengkap, pinjaman.status, jenis_kegiatan.nama_kegiatan, pinjaman.keterangan, detail_pinjaman_ruang.id_pinjaman
 FROM pinjaman 
-INNER JOIN peminjam  ON pinjaman.id_peminjam = peminjam.id_peminjam 
-INNER JOIN jenis_kegiatan ON pinjaman.id_jenis_kegiatan = jenis_kegiatan.id_jenis_kegiatan
-INNER JOIN detail_pinjaman_ruang ON pinjaman.id_pinjaman = detail_pinjaman_ruang.id_pinjaman;
+JOIN peminjam  ON pinjaman.id_peminjam = peminjam.id_peminjam 
+JOIN jenis_kegiatan ON pinjaman.id_jenis_kegiatan = jenis_kegiatan.id_jenis_kegiatan
+JOIN detail_pinjaman_ruang ON pinjaman.id_pinjaman = detail_pinjaman_ruang.id_pinjaman;
 ```
 
-<img width="883" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/432de9ec-4e78-4a7e-8063-540fd0146656">
+<img width="876" alt="image" src="https://github.com/DimasF3009/kelompok-8/assets/115542822/deda8934-d59b-4c12-a352-047e435a4215">
+
 
 ### 3. JOIN antara tabel detail_pinjaman_ruang, pinjaman, petugas, dan ruang:
 
@@ -244,8 +246,9 @@ INNER JOIN ruang ON detail_pinjaman_ruang.id_ruang = ruang.id_ruang;
 ```
 SELECT ruang.id_ruang, ruang.nama_ruang, detail_pinjaman_ruang.id_ruang, gedung.nama_gedung 
 FROM ruang 
-INNER JOIN gedung ON ruang.id_gedung = gedung.id_gedung
-INNER JOIN detail_pinjaman_ruang ON ruang.id_ruang = detail_pinjaman_ruang.id_ruang;
+JOIN gedung ON ruang.id_gedung = gedung.id_gedung
+JOIN detail_pinjaman_ruang ON ruang.id_ruang = detail_pinjaman_ruang.id_ruang;
 ```
 
-<img width="483" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/d67fbc07-d258-4efa-9062-798195234611">
+<img width="630" alt="image" src="https://github.com/DimasF3009/kelompok-8/assets/115542822/3f9ca16d-b002-4376-8e32-fd541f8d7d42">
+
