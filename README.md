@@ -207,16 +207,45 @@ SELECT * FROM Detail_pinjaman_ruang;
 
 ### 1. JOIN antara tabel peminjam dan instansi:
 
+```
+SELECT peminjam.*, instansi.nama_instansi 
+FROM peminjam 
+INNER JOIN instansi ON peminjam.id_instansi = instansi.id_instansi;
+```
+
 <img width="681" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/1ddf0208-5eff-4633-8d5e-e3db6b18514e">
 
-### 2.JOIN antara tabel pinjaman, peminjam, dan jenis_kegiatan, detail_pinjaman_ruang
+### 2.JOIN antara tabel pinjaman, peminjam, dan jenis_kegiatan, detail_pinjaman_ruang :
+
+```
+SELECT pinjaman.tgl_pinjam, pinjaman.jam_awal, pinjaman.jam_akhir, peminjam.nama_lengkap, pinjaman.status, jenis_kegiatan.nama_kegiatan, pinjaman.keterangan, detail_pinjaman_ruang.id_pinjaman
+FROM pinjaman 
+INNER JOIN peminjam  ON pinjaman.id_peminjam = peminjam.id_peminjam 
+INNER JOIN jenis_kegiatan ON pinjaman.id_jenis_kegiatan = jenis_kegiatan.id_jenis_kegiatan
+INNER JOIN detail_pinjaman_ruang ON pinjaman.id_pinjaman = detail_pinjaman_ruang.id_pinjaman;
+```
 
 <img width="883" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/432de9ec-4e78-4a7e-8063-540fd0146656">
 
 ### 3. JOIN antara tabel detail_pinjaman_ruang, pinjaman, petugas, dan ruang:
 
+```
+SELECT detail_pinjaman_ruang.*, pinjaman.id_pinjaman, petugas.nama_petugas, ruang.nama_ruang 
+FROM detail_pinjaman_ruang 
+INNER JOIN pinjaman ON detail_pinjaman_ruang.id_pinjaman = pinjaman.id_pinjaman 
+INNER JOIN petugas ON detail_pinjaman_ruang.id_petugas = petugas.id_petugas 
+INNER JOIN ruang ON detail_pinjaman_ruang.id_ruang = ruang.id_ruang;
+```
+
 <img width="522" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/2a7c9048-149e-4188-8d4f-2ec60f72315b">
 
 ### 4. JOIN antara tabel ruang, gedung dan detail_pinjaman_ruang :
+
+```
+SELECT ruang.id_ruang, ruang.nama_ruang, detail_pinjaman_ruang.id_ruang, gedung.nama_gedung 
+FROM ruang 
+INNER JOIN gedung ON ruang.id_gedung = gedung.id_gedung
+INNER JOIN detail_pinjaman_ruang ON ruang.id_ruang = detail_pinjaman_ruang.id_ruang;
+```
 
 <img width="483" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/d67fbc07-d258-4efa-9062-798195234611">
