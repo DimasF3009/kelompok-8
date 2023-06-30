@@ -92,8 +92,10 @@
 <img width="591" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/1d94fc4f-bfc2-4921-8f3c-36c169502e1d">
 
 **7. Tabel pinjaman**
+
+**A.Menambahkan constraint dari tabel pinjaman** 
 ```
-Menambahkan constraint dari tabel pinjaman ADD FOREIGN KEY (id_peminjam) referensi tabel peminjam (id_peminjam )
+ALTER TABLE pinjaman ADD FOREIGN KEY (id_peminjam) referensi tabel peminjam (id_peminjam )
 
 ADD FOREIGN KEY (id_jenis_kegiatan) referensi tabel id_jenis_kegiatan (id_jenis_kegiatan)
 ```
