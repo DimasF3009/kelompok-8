@@ -93,10 +93,9 @@
 
 **7. Tabel pinjaman**
 
-**A.Menambahkan constraint dari tabel pinjaman** 
+**Menambahkan constraint dari tabel pinjaman** 
 ```
 ALTER TABLE pinjaman ADD FOREIGN KEY (id_peminjam) referensi tabel peminjam (id_peminjam )
-
 ADD FOREIGN KEY (id_jenis_kegiatan) referensi tabel id_jenis_kegiatan (id_jenis_kegiatan)
 ```
 <img width="647" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/4df4b091-9b4e-40ca-a6b4-61f61be708e1">
@@ -104,11 +103,11 @@ ADD FOREIGN KEY (id_jenis_kegiatan) referensi tabel id_jenis_kegiatan (id_jenis_
 **8. Tabel Detail_pinjaman_ruang**
 
 <img width="685" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/105b1a37-686b-4a8b-93f9-06f07d50a0db">ㅤㅤㅤ
+
+**Menambahkan constraint dari tabel detail_pinjaman_ruang**
 ```
-Menambahkan constraint dari tabel detail_pinjaman_ruang ADD FOREIGN KEY (id_pinjaman) REFERENCES tabel pinjaman (id_pinjaman),
-
+ALTER TABLE detail_pinjaman_ruangan ADD FOREIGN KEY (id_pinjaman) REFERENCES tabel pinjaman (id_pinjaman),
 ADD FOREIGN KEY (id_petugas) REFERENCES tabel petugas (id_petugas),
-
 ADD FOREIGN KEY (id_ruang) REFERENCES tabel ruang (id_ruang)
 ```
 
