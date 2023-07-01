@@ -362,7 +362,7 @@ SELECT * FROM Detail_pinjaman_ruang;
 
 ![WhatsApp Image 2023-06-28 at 14 13 22](https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/175de1a4-ac5a-4c31-b491-537d6bf9b758)
 
-## • SQL JOIN 
+# SQL JOIN 
 
 ### 1. JOIN antara tabel peminjam dan instansi:
 
