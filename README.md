@@ -12,7 +12,7 @@
 <img width="402" alt="Screenshot 2023-06-23 081607" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115356128/a377dd2f-7bf6-42b3-99a1-b1b594797226">
 
 **DDL** (Data Definition Language), digunakan untuk mendefinisikan struktur tabel data.
-
+### Membuat Table detail_pinjaman_ruang
 ```
 CREATE TABLE `detail_pinjaman_ruang` (
   `id_detail_pinjaman_ruang` int(11) NOT NULL,
@@ -21,24 +21,28 @@ CREATE TABLE `detail_pinjaman_ruang` (
   `id_ruang` int(11) DEFAULT NULL
 );
 ```
+### Membuat Table gedung
 ```
 CREATE TABLE `gedung` (
   `id_gedung` int(11) NOT NULL,
   `nama_gedung` varchar(50) DEFAULT NULL
 );
 ```
+### Membuat Table instansi
 ```
 CREATE TABLE `instansi` (
   `id_instansi` int(11) NOT NULL,
   `nama_instansi` varchar(100) DEFAULT NULL
 );
 ```
+### Membuat Table jenis kegiatan
 ```
 CREATE TABLE `jenis_kegiatan` (
   `id_jenis_kegiatan` int(11) NOT NULL,
   `nama_kegiatan` varchar(100) DEFAULT NULL
 );
 ```
+### Membuat Table  peminjam
 ```
 CREATE TABLE `peminjam` (
   `id_peminjam` int(11) NOT NULL,
@@ -51,6 +55,7 @@ CREATE TABLE `peminjam` (
   `id_instansi` int(11) DEFAULT NULL
 );
 ```
+### Membuat Table petugas
 ```
 CREATE TABLE `petugas` (
   `id_petugas` int(11) NOT NULL,
@@ -59,6 +64,7 @@ CREATE TABLE `petugas` (
   `nama_petugas` varchar(50) DEFAULT NULL
 );
 ```
+### Membuat Table pinjaman
 ```
 CREATE TABLE `pinjaman` (
   `id_pinjaman` int(11) NOT NULL,
@@ -73,6 +79,7 @@ CREATE TABLE `pinjaman` (
   `id_jenis_kegiatan` int(11) DEFAULT NULL
 );
 ```
+### Membuat Table ruang
 ```
 CREATE TABLE `ruang` (
   `id_ruang` int(11) NOT NULL,
@@ -82,9 +89,7 @@ CREATE TABLE `ruang` (
   `id_gedung` int(11) DEFAULT NULL
 );
 ```
-```
 
-```
 ![Kelompok 8](https://github.com/DimasF3009/kelompok-8/assets/115356128/e5252efc-03fa-4000-96c7-061bd641e391)
 
 # SQL CRUD 
