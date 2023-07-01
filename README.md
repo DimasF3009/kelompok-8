@@ -1,6 +1,6 @@
 # Kelompok8_Basis-Data
 ```
-***Anggota Kelompok ***
+Anggota Kelompok
 1. Dimas Firmansyah (312210267)
 2. Agus Setiawan (312210193)
 3. Rian Fauza Dinata (312210083)
