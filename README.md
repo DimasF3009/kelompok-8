@@ -20,40 +20,98 @@
 ### (C) CREATE (Membuat database, membuat tabel, dan membuat data)
 ### 1. Membuat database
 
+`` CREATE DATABASE klompok8; ``
+Lalu Gunakan Perintah:
+`` USE klompok8 `` 
+Untuk Menggunakan Databasenya Dan Membuat Table Seperti Gambar Dibawah Ini:
+
 ![WhatsApp Image 2023-06-21 at 20 57 31](https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/5d9d8eab-8150-4465-8723-cc48972a66d9)
 
 ### 2. Membuat Table pada database
 
 **1. Table Jenis_kegiatan**
 
+`` CREATE TABLE jenis_kegiatan (
+id_jenis_kegiatan int(11),
+nama_kegiatan varchar(100)); ``
+  
 <img width="405" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/57b10f22-ce4d-4cbb-baa4-43a4f1c7546e">
 
 **2.  Table petugas**
 
+`` CREATE TABLE petugas (
+id_petugas int(11),
+username varchar(100),
+password varchar(100),
+nama_petugas varchar(50)); ``
+  
 <img width="390" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/67e4e926-a018-4a67-9b06-d4377450bbbe">
 
 **3. Table gedung**
 
+`` CREATE TABLE gedung (
+  id_gedung int(11),
+  nama_gedung varchar(50)); ``
+  
 <img width="395" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/132c2f2b-6d97-4854-bc38-d71a7482aff7">
 
 **4. Table instansi**
 
+`` CREATE TABLE instansi (
+  id_instansi int(11),
+  nama_instansi varchar(100)); ``
+  
 <img width="368" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/e5fae749-d4d4-4234-9ac3-fca8fbc440aa">
 
 **5. Table peminjam**
 
+`` CREATE TABLE peminjam (
+  id_peminjam int(11),
+  password varchar(100),
+  nama_lengkap varchar(100),
+  email varchar(100),
+  no_telp varchar(45),
+  alamat varchar(50),
+  surat_keterangan varchar(50),
+  id_instansi int(11)); ``
+  
 <img width="414" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/1d50a368-f221-42b0-987f-ca6b3d3eaf18">
 
 **6. Table pinjaman**
 
+`` CREATE TABLE pinjaman (
+  id_pinjaman int(11),
+  tgl_pinjam date,
+  jam_awal time,
+  jam_akhir time,
+  keterangan text,
+  berkas varchar(50),
+  status varchar(45),
+  alasan text,
+  id_peminjam int(11),
+  id_jenis_kegiatan int(11)); ``
+  
 <img width="393" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/b8f8d7eb-a0fd-4dcb-b7ae-c987c88fc85e">
 
 **7. Table detail_pinjaman_ruang**
 
+`` CREATE TABLE detail_pinjaman_ruang (
+  id_detail_pinjaman_ruang` int(11),
+  id_pinjaman int(11),
+  id_petugas int(11),
+  id_ruang int(11)); ``
+  
 <img width="424" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/eda1979f-6405-4b88-a212-62f04dec193d">
 
 **8. Table ruang**
 
+`` CREATE TABLE ruang (
+  id_ruang int(11),
+  nama_ruang varchar(45),
+  kapasitas int(11),
+  status_ruang varchar(45),
+  id_gedung int(11)); ``
+  
 <img width="395" alt="image" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115542822/2a0af80f-fba2-46c4-a32b-310c1b5063f5">
 
 ### 3. Memasukan data pada tabel
