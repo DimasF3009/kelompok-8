@@ -89,6 +89,19 @@ CREATE TABLE `ruang` (
   `id_gedung` int(11) DEFAULT NULL
 );
 ```
+### Indeks untuk tabel detail_pinjaman_ruang
+```
+ALTER TABLE `detail_pinjaman_ruang`
+  ADD PRIMARY KEY (`id_detail_pinjaman_ruang`),
+  ADD KEY `id_pinjaman` (`id_pinjaman`),
+  ADD KEY `id_petugas` (`id_petugas`),
+  ADD KEY `id_ruang` (`id_ruang`);
+```
+### Indeks untuk tabel gedung
+```
+ALTER TABLE `gedung`
+  ADD PRIMARY KEY (`id_gedung`);
+```
 
 ![Kelompok 8](https://github.com/DimasF3009/kelompok-8/assets/115356128/e5252efc-03fa-4000-96c7-061bd641e391)
 
