@@ -11,7 +11,7 @@ Anggota Kelompok
 
 <img width="402" alt="Screenshot 2023-06-23 081607" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115356128/a377dd2f-7bf6-42b3-99a1-b1b594797226">
 
-**DDL** (Data Definition Language), digunakan untuk mendefinisikan struktur tabel data.
+# DDL (Data Definition Language), digunakan untuk mendefinisikan struktur tabel data.
 ### Membuat Table detail_pinjaman_ruang
 ```
 CREATE TABLE `detail_pinjaman_ruang` (
