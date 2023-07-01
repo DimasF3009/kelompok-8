@@ -13,6 +13,78 @@
 
 **DDL** (Data Definition Language), digunakan untuk mendefinisikan struktur tabel data.
 
+```
+CREATE TABLE `detail_pinjaman_ruang` (
+  `id_detail_pinjaman_ruang` int(11) NOT NULL,
+  `id_pinjaman` int(11) DEFAULT NULL,
+  `id_petugas` int(11) DEFAULT NULL,
+  `id_ruang` int(11) DEFAULT NULL
+);
+```
+```
+CREATE TABLE `gedung` (
+  `id_gedung` int(11) NOT NULL,
+  `nama_gedung` varchar(50) DEFAULT NULL
+);
+```
+```
+CREATE TABLE `instansi` (
+  `id_instansi` int(11) NOT NULL,
+  `nama_instansi` varchar(100) DEFAULT NULL
+);
+```
+```
+CREATE TABLE `jenis_kegiatan` (
+  `id_jenis_kegiatan` int(11) NOT NULL,
+  `nama_kegiatan` varchar(100) DEFAULT NULL
+);
+```
+```
+CREATE TABLE `peminjam` (
+  `id_peminjam` int(11) NOT NULL,
+  `password` varchar(100) DEFAULT NULL,
+  `nama_lengkap` varchar(100) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `no_telp` varchar(45) DEFAULT NULL,
+  `alamat` varchar(50) DEFAULT NULL,
+  `surat_keterangan` varchar(50) DEFAULT NULL,
+  `id_instansi` int(11) DEFAULT NULL
+);
+```
+```
+CREATE TABLE `petugas` (
+  `id_petugas` int(11) NOT NULL,
+  `username` varchar(100) DEFAULT NULL,
+  `password` varchar(100) DEFAULT NULL,
+  `nama_petugas` varchar(50) DEFAULT NULL
+);
+```
+```
+CREATE TABLE `pinjaman` (
+  `id_pinjaman` int(11) NOT NULL,
+  `tgl_pinjam` date DEFAULT NULL,
+  `jam_awal` time DEFAULT NULL,
+  `jam_akhir` time DEFAULT NULL,
+  `keterangan` text DEFAULT NULL,
+  `berkas` varchar(50) DEFAULT NULL,
+  `status` varchar(45) DEFAULT NULL,
+  `alasan` text DEFAULT NULL,
+  `id_peminjam` int(11) DEFAULT NULL,
+  `id_jenis_kegiatan` int(11) DEFAULT NULL
+);
+```
+```
+CREATE TABLE `ruang` (
+  `id_ruang` int(11) NOT NULL,
+  `nama_ruang` varchar(45) DEFAULT NULL,
+  `kapasitas` int(11) DEFAULT NULL,
+  `status_ruang` varchar(45) DEFAULT NULL,
+  `id_gedung` int(11) DEFAULT NULL
+);
+```
+```
+
+```
 ![Kelompok 8](https://github.com/DimasF3009/kelompok-8/assets/115356128/e5252efc-03fa-4000-96c7-061bd641e391)
 
 # SQL CRUD 
