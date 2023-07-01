@@ -91,19 +91,26 @@ CREATE TABLE `ruang` (
 ```
 ### Menambahkan constraint tabel detail_pinjaman_ruang
 ```
-ALTER TABLE `detail_pinjaman_ruang`   ADD CONSTRAINT FOREIGN KEY (`id_pinjaman`) REFERENCES `pinjaman` (`id_pinjaman`),   ADD CONSTRAINT FOREIGN KEY (`id_petugas`) REFERENCES `petugas` (`id_petugas`),   ADD CONSTRAINT FOREIGN KEY (`id_ruang`) REFERENCES `ruang` (`id_ruang`);
+ALTER TABLE `detail_pinjaman_ruang`
+ADD CONSTRAINT FOREIGN KEY (`id_pinjaman`) REFERENCES `pinjaman` (`id_pinjaman`),
+ADD CONSTRAINT FOREIGN KEY (`id_petugas`) REFERENCES `petugas` (`id_petugas`),
+ADD CONSTRAINT FOREIGN KEY (`id_ruang`) REFERENCES `ruang` (`id_ruang`);
 ```
 ### Menambahkan constraint tabel peminjam
 ```
-ALTER TABLE `peminjam`   ADD CONSTRAINT FOREIGN KEY (`id_instansi`) REFERENCES `instansi` (`id_instansi`);
+ALTER TABLE `peminjam`
+ADD CONSTRAINT FOREIGN KEY (`id_instansi`) REFERENCES `instansi` (`id_instansi`);
 ```
 ### Menambahkan constraint tabel pinjaman
 ```
-ALTER TABLE `pinjaman`   ADD CONSTRAINT FOREIGN KEY (`id_peminjam`) REFERENCES `peminjam` (`id_peminjam`),   ADD CONSTRAINT FOREIGN KEY (`id_jenis_kegiatan`) REFERENCES `jenis_kegiatan` (`id_jenis_kegiatan`);
+ALTER TABLE `pinjaman`
+ADD CONSTRAINT FOREIGN KEY (`id_peminjam`) REFERENCES `peminjam` (`id_peminjam`),
+ADD CONSTRAINT FOREIGN KEY (`id_jenis_kegiatan`) REFERENCES `jenis_kegiatan` (`id_jenis_kegiatan`);
 ```
 ### Menambahkan constraint tabel ruang
 ```
-ALTER TABLE `ruang`   ADD CONSTRAINT FOREIGN KEY (`id_gedung`) REFERENCES `gedung` (`id_gedung`);
+ALTER TABLE `ruang`
+ADD CONSTRAINT FOREIGN KEY (`id_gedung`) REFERENCES `gedung` (`id_gedung`);
 ```
 
 ![Kelompok 8](https://github.com/DimasF3009/kelompok-8/assets/115356128/e5252efc-03fa-4000-96c7-061bd641e391)
