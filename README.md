@@ -9,7 +9,7 @@ Anggota Kelompok
 ```
 # ERD
 
-<img width="402" alt="Screenshot 2023-06-23 081607" src="https://github.com/DimasF3009/Kelompok8_Basis-Data/assets/115356128/a377dd2f-7bf6-42b3-99a1-b1b594797226">
+<img width="402" alt="Screenshot 2023-06-23 081607" src="https://github.com/DimasF3009/kelompok-8/assets/115356128/2ee3f92b-321b-426c-8cec-0e62a32e1c99">
 
 # DDL (Data Definition Language), digunakan untuk mendefinisikan struktur tabel data.
 ![Kelompok 8](https://github.com/DimasF3009/kelompok-8/assets/115356128/e5252efc-03fa-4000-96c7-061bd641e391)
