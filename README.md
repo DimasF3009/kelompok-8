@@ -410,3 +410,12 @@ JOIN detail_pinjaman_ruang ON ruang.id_ruang = detail_pinjaman_ruang.id_ruang;
 
 <img width="630" alt="image" src="https://github.com/DimasF3009/kelompok-8/assets/115542822/3f9ca16d-b002-4376-8e32-fd541f8d7d42">
 
+### Hasil Persentasi
+Menampilkan tanggal dan ruang yang tersedia
+
+<img width="681" alt="Screenshot 2023-07-05 105700" src="https://github.com/DimasF3009/kelompok-8/assets/115356128/303cbb31-9f6f-428c-8dfd-0c090566aea1">
+
+
+
+
+
